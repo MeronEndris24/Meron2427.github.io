@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+<head>
+    <title>See your Grade</title>
+    <link href="gradeExercise.css" rel="stylesheet" />
+</head>
+<body>
+
+<h2>Retrive Your Greade</h2>
+
+<div class="container">
+  <form action="http://mumstudents.org/params.php">
+  <div class="row">
+    <div class="col-25">
+      <label for="fname">First Name</label>
+    </div>
+    <div class="col-75">
+      <input type="text" id="fname" name="firstname" placeholder="Your name..">
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-25">
+      <label for="lname">Last Name</label>
+    </div>
+    <div class="col-75">
+      <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-25">
+      <label for="Id">ID</label>
+    </div>
+    <div class="col-75">
+      <input type="text" id="Id" name="ID" placeholder="Your ID..">
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-25">
+      <label for="assignment">Assignment</label>
+    </div>
+    <div class="col-75">
+      <select id="assignment" name="assignment">
+        <option value="WAP">WAP</option>
+        <option value="Algorithm">Algorithm</option>
+        <option value="MPP">MPP</option>
+      </select>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-25">
+      <label>Entry</label>
+    </div>
+    <div class="col-75">
+       <input id='Fall' name='Entry' type='radio' value='Fall' />
+       <label for='Fall' class='radio-label'>Fall</label>
+  <input id='Spring' name='Entry' type='radio' value='Spring' />
+  <label for='Spring' class='radio-label'>Spring</label>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-25">
+      <label for="correct">Check this box if this information is your's</label>
+    </div>
+    <div class="col-75">
+      <input type='checkbox' id="correct" name="Correct" >
+      <label for="correct" class="radio-label">Correct</label>
+    </div>
+  </div>
+  <div class="row">
+    <input type="submit" value="Get Gread">
+  </div>
+  </form>
+</div>
+
+</body>
+</html>
+
