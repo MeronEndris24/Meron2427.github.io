@@ -21,13 +21,13 @@
 		</header>
 
 		<!-- your HTML output follows -->
-                <form>
+                <form action="signup-submit.html" method="get">
                     <fieldset>
                      <legend>New User SignUp:</legend>
                      <table>
                          <tr>
                              <td><label for="name">Name</label></td>
-                             <td><input type="text" id="name" name="Name"></td>
+                             <td><input type="text" id="name" name="Name" required></td>
                          </tr>
                          <tr>
                              <td><label>Gender</label></td>
@@ -38,11 +38,11 @@
                          </tr>
                          <tr>
                              <td><label for="age">Age</label></td>
-                             <td><input type="number" id="age" name="Age"></td>
+                             <td><input type="number" id="age" name="Age" size="6" maxlength="4" required></td>
                          </tr>
                          <tr>
                              <td><label for="ptype">Personality Type</label></td>
-                             <td><input type="text" id="ptype" name="PType">
+                             <td><input type="text" id="ptype" name="PType" required>
                                  (<a href="http://www.humanmetrics.com/cgi-win/JTypes2.asp" target="_blank">Don't know your type?</a>)
                              </td>
                          </tr>
@@ -58,7 +58,7 @@
                          </tr>
                          <tr>
                              <td><label for="min">Seeking Age</label></td>
-                             <td><input type="number" id="min" name="Age" placeholder="min"> to <input type="number" id="max" name="Age" placeholder="max"></td>
+                             <td><input type="number" id="min" name="Age" placeholder="min" required> to <input type="number" id="max" name="Age" placeholder="max" required></td>
                          </tr>
                          <tr>
                              <td><input type="submit" value="Sign Up" /></td>
